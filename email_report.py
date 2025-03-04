@@ -122,5 +122,5 @@ class EmailReport:
         else:
             html_content += f"<p style='font-size: 30; font-weight: bold; font-color: white; background-color: green; padding: 10px;'>{self.dag_id} DAG Finished Successfully</p>"
 
-        to_email = "report_airflow@anadoluhayat.com.tr"
+        to_email = "*"
         send_email(to=to_email, subject=subject, html_content=html_content)
